@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de inicio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("todos2.jpg");
+      background-size: cover;
+      background-position:center center;
+      background-attachment: fixed;
+      background-repeat:no-repeat ;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: #8a1869;
+      text-shadow: 1px 1px 3px #ffffff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    nav a button {
+      background-color: rgba(225, 69, 227, 0.9);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a button:hover {
+      background-color: rgba(0, 106, 212, 0.9);
+      transform: scale(1.05);
+    }
+
+    .contenido {
+      width: 90%;
+      max-width: 950px;
+      margin: 0 auto 40px;
+      padding: 25px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    
+
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      font-size: 16px;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      overflow: hidden;
+      
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    th {
+      background-color: rgba(204, 90, 166, 0.8);
+      color: white;
+    }
+.contenedor{
+
+width: 200px;
+height: 200px;
+margin: 50px auto;
+display:flex ;
+align-items: center;
+justify-content: center;
+border: 4px solid#000;
+border-radius: 20px;
+overflow: hidden;
+background-color: #f4f4f4;
+perspective: 1000px;/* Da profundidad al giro3D*/
+
+}
+
+.imagen-giratoria{
+  width: 200px;
+  height: 200px;
+  animation: girarYInverso 3s linear infinite;
+  transform-style: preserve-3d
+
+}
+
+
+@keyframes girarYInverso{
+
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotateY(-360deg);
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  
+
+  <nav>
+    <a href="index.html"><button>Página de inicio</button></a>
+    <a href="sobre nosotros.html"><button>Sobre Nosotros</button></a>
+    <a href="oferta academica.html"><button>Oferta Académica</button></a>
+    <a href="estudiantes y docentes.html"><button>Estudiantes y Docentes</button></a>
+    <a href="galeria.html"><button>Galería</button></a>
+    <a href="contado.html"><button>Contacto</button></a>
+  </nav>
+
+   <center> <table>
+      <tr>
+        <th>Información</th>
+        <th>Detalle</th>
+      </tr>
+      <tr>
+        <td>Nombre del colegio</td>
+        <td>Instituto Técnico Rafael Pineda Ponce</td>
+      </tr>
+      <tr>
+        <td>Ubicación</td>
+        <td>Aldea Santiago, Tela Atlántida</td>
+      </tr>
+      <tr>
+        <td>Especialidad</td>
+        <td>Técnico</td>
+      </tr>
+      <tr>
+        <td>Contacto</td>
+        <td>DilciaFlores@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+  </center>
+<div class="contenedor">
+  <img src="logo colegio.png"alt="imagen giratoria"class="imagen-giratoria">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Elegante</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #edebeb, #ede7ec);
+        }
+
+        h1 {
+            text-align: center;
+            color: #880e4f;
+            margin-top: 30px;
+            font-size: 36px;
+        }
+
+        .boton-atras {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            background-color: #e54be5;
+            color: rgb(12, 12, 12);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .boton-atras:hover {
+            background-color: #f06292;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .galeria-item {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background: white;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .galeria-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <a href="index.html" class="boton-atras">←Regresar a Inicio</a>
+
+    <div class="galeria">
+        <div class="galeria-item"><img src="logo colegio.png" alt="imagen 1"></div>
+        <div class="galeria-item"><img src="foto1.jpg" alt="foto 2"></div>
+        <div class="galeria-item"><img src="foto2.jpg" alt="foto 3"></div>
+        <div class="galeria-item"><img src="foto4.jpg" alt="imagen 4"></div>
+        <div class="galeria-item"><img src="foto3.jpg" alt="imagen5"></div>
+        <div class="galeria-item"><img src="foto5 (2).jpg" alt="imagen 6"></div>
+        <div class="galeria-item"><img src="foto6.jpg" alt="imagen 7"></div>
+        <div class="galeria-item"><img src="fto7.jpg" alt="imagen 8"></div>
+        <div class="galeria-item"><img src="meraz1 (2).jpg" alt="imagen 9"></div>
+        <div class="galeria-item"><img src="IMG-20250405-WA0051.jpg" alt="imagen 10"></div>
+        <div class="galeria-item"><img src="IMG-20250405-WA0049.jpg" alt="imagen 11"></div>
+        <div class="galeria-item"><img src="IMG-20250405-WA0047.jpg" alt="imagen 12"></div>
+        <div class="galeria-item"><img src="labo.jpg" alt="imagen 12"></div>
+        <div class="galeria-item"><img src="todos.jpg" alt="imagen 12"></div>
+        <div class="galeria-item"><img src="tututu.jpg" alt="imagen 12"></div>
+        <div class="galeria-item"><img src="camara.jpg" alt="imagen 12"></div>
+    </div>
+
+</body>
+</html>
+   

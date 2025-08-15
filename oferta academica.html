@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oferta Académica</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #ffffff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .boton-container {
+      margin: 20px;
+    }
+    .Boton-llamativo {
+      background-color: #d556e1; 
+      color: #000;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      border: 1px solid #9e3d94;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 6px 6px 12px rgba(0,0,0,0.1), -6px -6px 12px rgba(255,255,255,0.7);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .Boton-llamativo:hover {
+      transform: translateY(-2px);
+      background-color: #e875f3;
+    }
+    .Boton-llamativo:active {
+      box-shadow:
+        inset 3px 3px 6px rgba(75, 71, 71, 0.1),
+        inset -3px -3px 6px rgba(73, 70, 70, 0.7);
+    }
+    .header {
+      padding: 20px;
+      text-align: center;
+    }
+    .header h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .container {
+      max-width: 90%;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 2px 8px 20px rgba(209, 6, 224, 0.545);
+      border-radius: 12px;
+    }
+    h2 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .opciones {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    select {
+      width: 90%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #d551e7;
+      background-color: #dd62ed;
+      box-shadow: 6px 6px 12px rgba(0,0,0,0.1), -6px -6px 12px rgba(255,255,255,0.7);
+      transition: box-shadow 0.2s;
+    }
+    select:focus {
+      outline: none;
+      box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.7);
+    }
+    .descripcion {
+      margin-top: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: #333;
+    }
+    @media (max-width: 600px) {
+      select {
+        width: 90%;
+      }
+      .Boton-llamativo {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="boton-container">
+    <!-- Si este archivo es index.html, el enlace puede eliminarse o ajustarse -->
+    <a href="index.html" class="Boton-llamativo">←Regresar a Inicio</a>
+  </div>
+
+  <div class="header">
+    <h3>NUESTRA INSTITUCIÓN TE OFRECE DIFERENTES MÓDULOS Y CARRERAS TÉCNICAS.</h3>
+  </div>
+
+  <div class="container">
+    <section>
+      <h2>MÓDULOS DISPONIBLES</h2>
+      <div class="opciones">
+        <select id="modulos">
+          <option value="">Seleccione un módulo</option>
+          <option value="madera">MADERA</option>
+          <option value="electricidad">ELECTRICIDAD</option>
+          <option value="metalicas">CONSTRUCCIONES METÁLICAS</option>
+          <option value="hogar">HOGAR</option>
+        </select>
+        <div class="descripcion" id="descripcionModulo"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>CARRERAS TÉCNICAS</h2>
+      <div class="opciones">
+        <select id="carreras">
+          <option value="">Selecciona una carrera</option>
+          <option value="informatica">BTP EN INFORMÁTICA</option>
+          <option value="estructuras">BTP EN CONSTRUCCIONES METÁLICAS</option>
+          <option value="electricidad">BTP EN ELECTRICIDAD</option>
+          <option value="hotelera">BTP EN ADMI. HOTELERA</option>
+        </select>
+        <div class="descripcion" id="descripcionCarrera"></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+
+
